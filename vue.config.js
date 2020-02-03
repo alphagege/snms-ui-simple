@@ -3,12 +3,12 @@ const resolve = dir => require('path').join(__dirname, dir)
 
 process.env.COFRAME_APP_VERSION = '1.0.0'
 process.env.COFRAME_APP_BUILD_TIME = require('dayjs')().format('YYYY-M-D HH:mm:ss')
-
+console.log(process.env)
 module.exports = {
   lintOnSave: true,
   devServer: {
     port: '9999', // 代理端口
-    open: true // false,不打开，true表示打开
+    open: true // false不打开，true表示打开
   },
   css: {
     loaderOptions: {
