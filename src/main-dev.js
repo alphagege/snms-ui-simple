@@ -4,6 +4,8 @@ import router from './router'
 import store from './store'
 import './plugins/element.js'
 
+import 'normalize.css/normalize.css' // 样式重置文件
+import '@/styles/index.scss' //  全局样式表
 Vue.config.productionTip = false
 
 new Vue({
